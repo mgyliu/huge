@@ -124,12 +124,12 @@ void hugeglasso_sub(Eigen::MatrixXd &S, Eigen::MatrixXd &W, Eigen::MatrixXd &T, 
 
     int gap_int;
     double gap_ext,gap_act;
-    double thol_act = 1e-4;
-    double thol_ext = 1e-4;
+    double thol_act = 1e-2; // 1e-4;
+    double thol_ext = 1e-2; // 1e-4;
 
     int MAX_ITER_EXT = 100;
-    int MAX_ITER_INT = 10000;
-    int MAX_ITER_ACT = 10000;
+    int MAX_ITER_INT = 100; // 10000;
+    int MAX_ITER_ACT = 100; // 10000;
     int iter_ext,iter_int,iter_act;
 
 
